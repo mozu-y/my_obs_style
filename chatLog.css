@@ -34,7 +34,7 @@
   --font-color-result: rgba(255, 255, 255, 1);
   --font-shadow-result: 2px 2px 3px black; /** 読み方）X軸 Y軸 影の幅 色 */
   /** ダイス結果の文字部分（(1D100) > 40 など） */
-  --font-size-detail: 2.0rem;
+  --font-size-detail: 1.5rem;
   --font-color-detail: rgba(200, 200, 200, 1);
   --font-shadow-detail: 2px 2px 3px black; /** 読み方）X軸 Y軸 影の幅 色 */
   /** 成功時の青文字部分 */
@@ -235,4 +235,54 @@ span.MuiTypography-root.MuiTypography-caption {
   color: var(--font-color-dice-time) !important;
   text-shadow: var(--font-shadow-dice-time) !important;
   font-size: var(--font-size-dice-time) !important;
+}
+
+/**以下ログ**/
+
+.MuiList-root>div>div>div:nth-last-of-type(-n+5) {
+  display: block !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+:root {
+  --icon-width: 200px !important; /** 画像の横幅 */
+  --icon-height: 200px !important; /** 画像の高さ */
+  --font-color-success: rgb(255 255 255) !important;
+  --font-color-fail: rgb(255 255 255) !important;
+  --background-color: rgba(0, 0, 0, 0.95) !important;
+  --is-top: auto;/* 上揃えの場合⇒0、下揃えの場合⇒auto */
+  --is-bottom: 0;/* 上揃えの場合⇒auto、下揃えの場合⇒0 */
+}
+
+.MuiListItemAvatar-root {
+  position: absolute !important;
+  left: 300px !important;/* アイコン画像のY座標 */
+  opacity: 0.75 !important;/* 画像の不透明度　0：透明、1：不透明 */
+  z-index: 1 !important;
+}
+ .MuiListItemAvatar-root img{
+   position: relative !important;
+   top: -20px !important;/* アイコン画像のX座標 */
+}
+
+.MuiListItemText-root {
+  z-index: 3 !important;
+}
+
+.MuiListItem-root {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  padding-left: 20px !important;
+  overflow: hidden !important;
+}
+
+/* 文章の省略（...）を解除して全文表示する */
+.MuiListItemText-root p, 
+.MuiListItemText-root span {
+  overflow: visible !important;
+  white-space: normal !important;
+  display: block !important;
+  text-overflow: clip !important;
+  -webkit-line-clamp: unset !important; /* 行数制限を解除 */
 }
