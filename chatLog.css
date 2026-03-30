@@ -50,7 +50,7 @@
   --font-color-user-name: rgba(255, 255, 255, 1);
   --font-shadow-user-name: 2px 2px 3px black; /** 読み方）X軸 Y軸 影の幅 色 */
   /** ダイスを振った時間を表示するか */
-  --disp-dice-time: transparent; /** none⇒表示しない、transparent⇒表示する */
+  --disp-dice-time: none; /** none⇒表示しない、transparent⇒表示する */
   --font-size-dice-time: 1rem;
   --font-color-dice-time: rgba(255, 255, 255, 0.6);
   --font-shadow-dice-time: 2px 2px 3px black; /** 読み方）X軸 Y軸 影の幅 色 */
@@ -199,23 +199,20 @@ p.MuiTypography-root {
   font-size: var(--font-size-detail) !important;
 }
 
-/** 成功（Success）の文字を狙い撃ち */
-span[style*="color: rgb(63, 81, 181)"],
-span[style*="color: #3f51b5"],
-p[style*="color: rgb(63, 81, 181)"] {
+/** 成功時の青文字部分 */
+.MuiTypography-colorPrimary {
   color: var(--font-color-success) !important;
   text-shadow: var(--font-shadow-success) !important;
   font-size: var(--font-size-success) !important;
 }
 
-/** 失敗（Failure）の文字を狙い撃ち */
-span[style*="color: rgb(244, 67, 54)"],
-span[style*="color: #f44336"],
-p[style*="color: rgb(244, 67, 54)"] {
+/* 失敗時の赤字部分 */
+.MuiTypography-colorSecondary {
   color: var(--font-color-fail) !important;
   text-shadow: var(--font-shadow-fail) !important;
   font-size: var(--font-size-fail) !important;
 }
+
 /* ユーザ名、ダイスを振った時間 */
 .MuiListItemText-primary,
 .MuiTypography-caption {
