@@ -34,15 +34,15 @@
   --font-color-result: rgba(255, 255, 255, 1);
   --font-shadow-result: 2px 2px 3px black; /** 読み方）X軸 Y軸 影の幅 色 */
   /** ダイス結果の文字部分（(1D100) > 40 など） */
-  --font-size-detail: 1.1rem;
+  --font-size-detail: 1.5rem;
   --font-color-detail: rgba(200, 200, 200, 1);
   --font-shadow-detail: 2px 2px 3px black; /** 読み方）X軸 Y軸 影の幅 色 */
   /** 成功時の青文字部分 */
-  --font-size-success: 1.1rem;
+  --font-size-success: 1.5rem;
   --font-color-success: rgba(134, 202, 255, 1);
   --font-shadow-success: 2px 2px 3px black; /** 読み方）X軸 Y軸 影の幅 色 */
   /** 失敗時の赤文字部分 */
-  --font-size-fail: 1.1rem;
+  --font-size-fail: 1.5rem;
   --font-color-fail: rgba(255, 161, 161, 1);
   --font-shadow-fail: 2px 2px 3px black; /** 読み方）X軸 Y軸 影の幅 色 */
   /** ユーザ名の部分 */
