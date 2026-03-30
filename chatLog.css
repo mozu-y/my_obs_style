@@ -199,17 +199,24 @@ p.MuiTypography-root {
   font-size: var(--font-size-detail) !important;
 }
 
-/** 成功時の青文字部分をrgbaに塗り替え */
-span[class*="MuiTypography-color"] {
+/** 成功時の青文字部分を強制上書き */
+.MuiTypography-root[style*="color: rgb(63, 81, 181)"],
+.MuiTypography-root[style*="color: #3f51b5"],
+.MuiTypography-root.MuiTypography-colorPrimary,
+span[style*="color: rgb(63, 81, 181)"] {
   color: var(--font-color-success) !important;
+  -webkit-text-fill-color: var(--font-color-success) !important;
   text-shadow: var(--font-shadow-success) !important;
   font-size: var(--font-size-success) !important;
 }
 
-/** 失敗時の赤字部分をrgbaに塗り替え */
-span[style*="color: rgb(244, 67, 54)"],
-span[style*="color: #f44336"] {
+/** 失敗時の赤字部分を強制上書き */
+.MuiTypography-root[style*="color: rgb(244, 67, 54)"],
+.MuiTypography-root[style*="color: #f44336"],
+.MuiTypography-root.MuiTypography-colorSecondary,
+span[style*="color: rgb(244, 67, 54)"] {
   color: var(--font-color-fail) !important;
+  -webkit-text-fill-color: var(--font-color-fail) !important;
   text-shadow: var(--font-shadow-fail) !important;
   font-size: var(--font-size-fail) !important;
 }
