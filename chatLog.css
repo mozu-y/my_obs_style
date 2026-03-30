@@ -199,15 +199,16 @@ p.MuiTypography-root {
   font-size: var(--font-size-detail) !important;
 }
 
-/** 成功時の青文字部分 */
-.MuiTypography-colorPrimary {
+/** 成功時の青文字部分をrgbaに塗り替え */
+span[class*="MuiTypography-color"] {
   color: var(--font-color-success) !important;
   text-shadow: var(--font-shadow-success) !important;
   font-size: var(--font-size-success) !important;
 }
 
-/* 失敗時の赤字部分 */
-.MuiTypography-colorSecondary {
+/** 失敗時の赤字部分をrgbaに塗り替え */
+span[style*="color: rgb(244, 67, 54)"],
+span[style*="color: #f44336"] {
   color: var(--font-color-fail) !important;
   text-shadow: var(--font-shadow-fail) !important;
   font-size: var(--font-size-fail) !important;
