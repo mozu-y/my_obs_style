@@ -239,19 +239,15 @@ span.MuiTypography-root.MuiTypography-caption {
 
 .css-1l6qhgm {
     font-size: inherit;
-    color: #5A7EFF;
-}
-.css-ucj12 {
-    font-size: inherit;
-    color: #fff;
-}
-.css-1j13mke {
-  font-size: inherit;
-  color: #F93844;
+    color: var(--font-color-success) !important; /* 変数に変更 */
 }
 
-.MuiPaper-root > form {
-  display: block !important;
-  height: 48px;
-  background-color: #000;
+.css-ucj12 {
+    font-size: inherit;
+    color: var(--font-color-result) !important; /* 変数に変更 */
+}
+
+.css-1j13mke {
+  font-size: inherit;
+  color: var(--font-color-fail) !important; /* 変数に変更 */
 }
