@@ -236,3 +236,22 @@ span.MuiTypography-root.MuiTypography-caption {
   text-shadow: var(--font-shadow-dice-time) !important;
   font-size: var(--font-size-dice-time) !important;
 }
+
+.css-1l6qhgm {
+    font-size: inherit;
+    color: #5A7EFF;
+}
+.css-ucj12 {
+    font-size: inherit;
+    color: #fff;
+}
+.css-1j13mke {
+  font-size: inherit;
+  color: #F93844;
+}
+
+.MuiPaper-root > form {
+  display: block !important;
+  height: 48px;
+  background-color: #000;
+}
