@@ -239,15 +239,14 @@ span.MuiTypography-root.MuiTypography-caption {
 
 .css-1l6qhgm {
     font-size: inherit;
-    color: var(--font-color-success) !important; /* 変数に変更 */
+    color: #86caff;
 }
-
 .css-ucj12 {
     font-size: inherit;
-    color: var(--font-color-result) !important; /* 変数に変更 */
+    color: #ff8cff;
 }
-
 .css-1j13mke {
   font-size: inherit;
-  color: var(--font-color-fail) !important; /* 変数に変更 */
+  color: #F93844;
 }
+
