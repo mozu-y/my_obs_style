@@ -536,12 +536,12 @@ span.MuiTypography-root.MuiTypography-caption {
   overflow: hidden !important;
 }
 
-/* 文章の省略（...）を解除して全文表示する */
+/* 文章の省略（...）を解除して「改行」も有効にする */
 .MuiListItemText-root p, 
 .MuiListItemText-root span {
   overflow: visible !important;
-  white-space: normal !important;
-  display: block !important;
+  white-space: pre-wrap !important; /* ← これが「改行をそのまま表示せよ」という命令 */
+  display: inline-block !important; /* blockからinline-blockに変えると安定します */
   text-overflow: clip !important;
   -webkit-line-clamp: unset !important; /* 行数制限を解除 */
 }
@@ -578,7 +578,6 @@ span.MuiTypography-root.MuiTypography-caption {
   }
   100% { 
     opacity: 0; 
-    transform: translateY(-80px); /* 80px上にスライドして消える */
     visibility: hidden; 
   }
 }
